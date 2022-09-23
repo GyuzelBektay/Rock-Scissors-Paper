@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
+  color: rgb(66, 63, 63);
+  width: 1500px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+
+.tool {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tool:active {
+  transform: scale(98%);
+}
+
+.new-game {
+  background-color: rgb(236, 207, 148);
+  border: none;
+  padding: 5px 10px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1rem;
+}
+
+.new-game:focus {
+  outline: none;
+}
+
+.new-game:active {
+  transform: scale(98%);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
