@@ -44,19 +44,22 @@ function disableTools() {
 
 let song1 = new Audio("music/puru.mp3");
 let song2 = new Audio("music/nyan.mp3");
-function checkWinner() {
-  if (score1 == 5) {
+
+function finalResult() {
+  if (score1 === 5) {
     song1.play();
     compScore.textContent = "COMPUTER WON!";
     playerScore.textContent = "YOU LOST!";
     disableTools();
-  } else if (score2 == 5) {
+  } else if (score2 === 5) {
     song2.play();
     compScore.textContent = "COMPUTER LOST!";
     playerScore.textContent = "YOU WON!";
     disableTools();
   }
+}
 
+function checkWinner() {
   if (player === computer) {
     score1;
     score2;
@@ -109,7 +112,7 @@ function checkWinner() {
     song2.pause();
     startNewGame();
   });
-
+  finalResult();
   compScore.textContent = `Computer score: ${score1}`;
   playerScore.textContent = `Player score: ${score2}`;
 }
